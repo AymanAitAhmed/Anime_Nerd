@@ -16,15 +16,16 @@ Anime Nerd is an Android game developed in Kotlin using Jetpack Compose. It is d
 
 Here are some screenshots from the Anime Nerd app:
 
-![Screenshot 1](https://github.com/AymanAitAhmed/Anime_Nerd/blob/master/image%20question.jpg)
-*Description of Screenshot 1*
+<div align="center">
 
-![Screenshot 2](https://github.com/AymanAitAhmed/Anime_Nerd/blob/master/congrats.jpg)
-*Description of Screenshot 2*
+<img src="https://github.com/AymanAitAhmed/Anime_Nerd/blob/master/main%20menu.jpg" width="200">
 
-![Screenshot 3](/screenshots/screenshot3.png)
-*Description of Screenshot 3*
+<img src="https://github.com/AymanAitAhmed/Anime_Nerd/blob/master/text%20question.jpg" width="200">
 
+<img src="https://github.com/AymanAitAhmed/Anime_Nerd/blob/master/image%20question.jpg" width="200">
+
+<img src="https://github.com/AymanAitAhmed/Anime_Nerd/blob/master/congrats.jpg" width="200">
+</div>
 ## Getting Started
 
 To get started with the Anime Nerd project, follow these steps:
