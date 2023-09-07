@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "267131885149",
+    "project_id": "anime-nerd-eb2d3",
+    "storage_bucket": "anime-nerd-eb2d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267131885149:android:9aa0e31039babc17c75fb4",
+        "android_client_info": {
+          "package_name": "lr.aym.animenerd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267131885149-hf8o2b85b4ilmg2vpoijd2r15bq28p7g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lr.aym.animenerd",
+            "certificate_hash": "07904f76739c988471e20799f000aa990fc74d18"
+          }
+        },
+        {
+          "client_id": "267131885149-orefus0s8i6ojmvusofrittfh9cfcl4v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpP4gLLAanEyRd7ecyvWmcrLl-kpxTWGk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267131885149-orefus0s8i6ojmvusofrittfh9cfcl4v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

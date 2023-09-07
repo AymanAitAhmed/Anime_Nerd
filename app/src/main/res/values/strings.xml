@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Anime Nerd</string>
+    <string name="admob_app_id">ca-app-pub-8233548080046339~1830457658</string>
+    <string name="admob_banner_id">ca-app-pub-8233548080046339/8368015654</string>
+    <string name="admob_interstitial_id">ca-app-pub-8233548080046339/4852276624</string>
+    <string name="admob_rewarded_id">ca-app-pub-8233548080046339/4250421647</string>
+
+</resources>
