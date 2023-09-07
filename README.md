@@ -1,6 +1,6 @@
 # Anime Nerd
 
-Anime Nerd is an Android game developed in Kotlin using Jetpack Compose. It is designed to test your knowledge of anime through a series of both text-based and image-based questions. This project served as a learning experience for me, and it showcases various aspects of modern Android app development, including responsive UI design with Compose, Room database pre-population, and the use of Kotlin Flows with DataStore. The project is structured with a clean architecture and follows the MVVM pattern for improved code readability and maintainability.
+Anime Nerd is an Android game developed in Kotlin using Jetpack Compose. It is designed to test your knowledge of anime through a series of 100 both text-based and image-based questions. This project served as a learning experience for me, and it showcases various aspects of modern Android app development, including responsive UI design with Compose, Room database pre-population, and the use of Kotlin Flows with DataStore. The project is structured with a clean architecture and follows the MVVM pattern for improved code readability and maintainability.
 
 ## Features
 
