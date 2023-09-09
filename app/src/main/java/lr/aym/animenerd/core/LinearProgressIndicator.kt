@@ -1,5 +1,6 @@
 package lr.aym.animenerd.core
 
+import android.util.Log
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -25,10 +26,11 @@ fun LinearProgressIndicator(currentLevel : Int, totalLevels : Int) {
         targetValue = progress,
         animationSpec = ProgressIndicatorDefaults.ProgressAnimationSpec
     )
-    LaunchedEffect(key1 = currentLevel ){
+    LaunchedEffect(key1 = currentLevel,key2 = totalLevels ){
         delay(500)
-        progress = currentLevel.toFloat() /totalLevels
+        progress = (currentLevel.toFloat() /totalLevels)
     }
+    Log.d("progress", "LinearProgressIndicator: $currentLevel  $totalLevels  $progress  $progressAnimation")
     LinearProgressIndicator(
         progress = progressAnimation,
         modifier = Modifier
