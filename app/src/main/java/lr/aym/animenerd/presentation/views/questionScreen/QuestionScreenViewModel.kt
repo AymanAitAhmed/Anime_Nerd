@@ -56,6 +56,9 @@ class QuestionScreenViewModel @Inject constructor(
     private val _showRevealLetterDialog = MutableStateFlow(false)
     val showRevealLetterDialog = _showRevealLetterDialog.asStateFlow()
 
+    private val _showEarnPointsDialog = MutableStateFlow(false)
+    val showEarnPointsDialog = _showEarnPointsDialog.asStateFlow()
+
     private val _watchRewardedAdClicked = MutableStateFlow(false)
     val watchRewardedAdClicked = _watchRewardedAdClicked.asStateFlow()
 
@@ -208,6 +211,12 @@ class QuestionScreenViewModel @Inject constructor(
         _showRevealLetterDialog.value = false
     }
 
+    fun onEarnPointsClick(){
+        _showEarnPointsDialog.value = true
+    }
+    fun onDismissEarnPointsDialogClick(){
+        _showEarnPointsDialog.value = false
+    }
     fun onWatchRewardedAdClick() {
         _watchRewardedAdClicked.value = true
     }
@@ -215,6 +224,7 @@ class QuestionScreenViewModel @Inject constructor(
     fun onWatchRewardedAdFinish() {
         _watchRewardedAdClicked.value = false
         _showRevealLetterDialog.value = false
+        onDismissEarnPointsDialogClick()
     }
 
 

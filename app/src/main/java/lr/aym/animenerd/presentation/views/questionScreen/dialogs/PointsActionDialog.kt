@@ -40,10 +40,11 @@ import lr.aym.animenerd.ui.theme.darkOrange
 import lr.aym.animenerd.ui.theme.lightOrange
 
 @Composable
-fun RevealLetterErrorDialog(
+fun PointsActionDialog(
+    showLoadingProgressBar: Boolean,
+    text : String,
     onDismissClick: () -> Unit,
-    onWatchAdsClick: () -> Unit,
-    showLoadingProgressBar: Boolean
+    onWatchAdsClick: () -> Unit
 ) {
     val scaleDialog = remember {
         Animatable(0f)
@@ -83,7 +84,7 @@ fun RevealLetterErrorDialog(
                 verticalArrangement = Arrangement.Top
             ) {
                 AutoResizeText(
-                    text = "You need at least 1 point to reveal a letter",
+                    text = text,
                     maxLines = 2,
                     fontWeight = FontWeight.Bold,
                     color = Color.White,
@@ -103,12 +104,15 @@ fun RevealLetterErrorDialog(
                         Row(
                             modifier = Modifier
                                 .fillMaxHeight()
-                                .weight(1f)
+                                .weight(1f),
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.Center
                         ) {
                             CircularProgressIndicator(
                                 modifier = Modifier
+                                    .fillMaxHeight(0.7f)
                                     .aspectRatio(1f)
-                                    .fillMaxHeight(0.8f),
+                                    ,
                                 color = Color.White,
                                 strokeCap = StrokeCap.Round
                             )

@@ -1,4 +1,4 @@
-package lr.aym.animenerd.domain.usedCases
+package lr.aym.animenerd.core
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -10,29 +10,27 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
-import lr.aym.animenerd.ui.theme.darkOrange
 import lr.aym.animenerd.ui.theme.lightOrange
 
 @Composable
-fun Linearprogressindicator(currentlevel : Int , totallevels : Int) {
+fun LinearProgressIndicator(currentLevel : Int, totalLevels : Int) {
 
     var progress by remember {
         mutableStateOf(0f)
     }
 
-    val progressanimation by animateFloatAsState(
+    val progressAnimation by animateFloatAsState(
         targetValue = progress,
         animationSpec = ProgressIndicatorDefaults.ProgressAnimationSpec
     )
-    LaunchedEffect(key1 = 1 ){
+    LaunchedEffect(key1 = currentLevel ){
         delay(500)
-        progress = currentlevel.toFloat() /totallevels
+        progress = currentLevel.toFloat() /totalLevels
     }
     LinearProgressIndicator(
-        progress = progressanimation,
+        progress = progressAnimation,
         modifier = Modifier
             .fillMaxWidth(0.6f)
             .clip(RoundedCornerShape(7.dp))
