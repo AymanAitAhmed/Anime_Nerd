@@ -17,13 +17,12 @@ class CurrentLevel(private val context : Context) {
     }
     //get the current Level
     val getCurrentLevel: Flow<Int> = context.datastore.data.map { preferences->
-        preferences[CURRENT_LEVEL_KEY] ?: 99
+        preferences[CURRENT_LEVEL_KEY] ?: 1
     }
     // to save current Level
     suspend fun saveCurrentLevel(currentLevel : Int){
         context.datastore.edit {preferences ->
             preferences[CURRENT_LEVEL_KEY] = currentLevel
-
         }
     }
 }
