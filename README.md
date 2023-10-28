@@ -37,8 +37,8 @@ Here are some screenshots from the Anime Nerd app:
 ## License
 This project is intended for educational purposes only. You are free to use the code for learning, experimentation, or personal projects. However, any commercial use of the code, including publishing a similar app for profit, is strictly prohibited.
 
-Acknowledgments
+## Acknowledgments
 Special thanks to the Android community, Jetpack Compose team, and all contributors for their valuable resources and support during the development of this project.
 
-Contact
+## Contact
 If you have any questions or suggestions, please feel free to contact me at aymen.aitahmed3@gmail.com.
