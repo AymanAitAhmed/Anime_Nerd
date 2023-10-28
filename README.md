@@ -1,4 +1,7 @@
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/AymanAitAhmed/Anime_Nerd)
+<a href="https://github.com/AymanAitAhmed/Anime_Nerd/releases/latest/download/Anime.Nerd.apk"> 
+  
+<img src="https://img.shields.io/github/v/release/AymanAitAhmed/Anime_Nerd" width="100">
+</a>
 
 # Anime Nerd
 
